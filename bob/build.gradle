@@ -1,0 +1,19 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+configurations.all {
+    resolutionStrategy {
+        dependencySubstitution {
+            substitute module('org.springframework:spring-jdbc') with module('org.springframework:spring-jdbc:4.2.6.RELEASE')
+        }
+    }
+}
+
+dependencies {
+    compile ("org.springframework:spring-jdbc")
+}

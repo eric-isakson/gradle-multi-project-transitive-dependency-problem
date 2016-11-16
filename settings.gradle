@@ -1,0 +1,6 @@
+rootProject.name = 'gradle-multi-project-transitive-dependency-problem'
+include 'foo'
+include 'bar'
+include 'baz'
+include 'joe'
+include 'bob'
